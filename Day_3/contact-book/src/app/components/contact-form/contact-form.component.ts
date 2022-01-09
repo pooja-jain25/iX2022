@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactForm } from 'src/app/models/contact-form';
 
 @Component({
   selector: 'app-contact-form',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactFormComponent implements OnInit {
 
+  contactForm: ContactForm = new ContactForm();
+  contacts: ContactForm[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addContact() {
+    // collecting the form data
+    // adding it to an array of contacts 
+    console.log(this.contactForm)
+    this.contacts.push(this.contactForm);
+    this.contactForm = new ContactForm();
   }
 
 }
