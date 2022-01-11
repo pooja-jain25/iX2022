@@ -3,18 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
-import { TasksComponent } from './components/tasks/tasks.component';
-import { ModalComponent } from './components/modal/modal.component';
+import { InterestFormComponent } from './components/interest-form/interest-form.component';
+import { InterestCalculatorComponent } from './components/interest-calculator/interest-calculator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    HomeComponent,
-    TasksComponent,
-    ModalComponent
+    InterestFormComponent,
+    InterestCalculatorComponent
   ],
   imports: [
     BrowserModule,
